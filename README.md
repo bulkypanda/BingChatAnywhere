@@ -1,5 +1,7 @@
 # Bing Chat Anywhere
 
+This extension only works if you have access to Bing Chat on your Microsoft Account.
+
 A simple web browser extension that allows you to access Bing Chat on unsupported browsers. This extension works only on chromium browsers (Edge, Chrome, Opera etc.)
 
 ## Adding the Extension

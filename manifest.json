@@ -3,7 +3,7 @@
    "version": "1.0",
    "description": "Enable Bing Chat on unsupported browsers!",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "permissions": ["webRequest", "webRequestBlocking", "https://play.geforcenow.com/*"],
+   "permissions": ["webRequest", "webRequestBlocking", "https://www.bing.com/*"],
    "background": {
       "scripts": ["background.js"],
       "persistent": true
