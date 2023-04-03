@@ -1,22 +1,12 @@
 {
    "name": "BingChatAnywhere",
-   "version": "1.0",
+   "version": "1.0.0",
    "description": "Enable Bing Chat on unsupported browsers!",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "permissions": ["webRequest", "webRequestBlocking", "https://www.bing.com/*"],
-   "background": {
-      "scripts": ["background.js"],
-      "persistent": true
-   },
-   "browser_action": {
-      "default_icon": {
-         "32": "images/32.png",
-         "48": "images/48.png",
-         "64": "images/64.png",
-         "128": "images/128.png"
-      },
-      "default_popup": "popup.html",
-      "default_title": "BingChatAnywhere"
+   "permissions": ["webRequest", "declarativeNetRequest"],
+   "host_permissions": ["https://*.bing.com/*"],
+   "action": {
+      "default_popup": "popup.html"
    },
    "icons": {
       "32": "images/32.png",
@@ -24,6 +14,14 @@
       "64": "images/64.png",
       "128": "images/128.png"
    },
-   "manifest_version": 2
+   "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "1",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    },
+   "manifest_version": 3
 }
-
