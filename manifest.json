@@ -3,7 +3,7 @@
    "version": "1.0.0",
    "description": "Enable Bing Chat on unsupported browsers!",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "permissions": ["webRequest", "declarativeNetRequest"],
+   "permissions": ["declarativeNetRequest"],
    "host_permissions": ["https://*.bing.com/*"],
    "action": {
       "default_popup": "popup.html"
